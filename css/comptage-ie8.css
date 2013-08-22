@@ -1,0 +1,40 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+	display: block;
+}
+
+.todelete {
+	filter: alpha(opacity=50); /*IE*/
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=50)"; /*IE8*/
+}
+
+/**********************************************************************************/
+
+#destinataire {
+	filter:progid:DXImageTransform.Microsoft.Shadow(color='#aaaaaa', Direction=135, Strength=5);
+	zoom: 1;
+}
+
+
+/********************** MA CAMPAGNE *************************/
+
+#ma-campagne {
+	background: #fff;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color='#aaaaaa', Direction=135, Strength=5);
+	zoom: 1;
+}
+
+
+/*********************************************/
+
+#ma-cible > header {
+	/*filter:progid:DXImageTransform.Microsoft.Shadow(color='#aaaaaa', Direction=135, Strength=5);
+	zoom: 1;*/
+}
+
+#ma-cible .critere {
+	filter:progid:DXImageTransform.Microsoft.Shadow(color='#aaaaaa', Direction=135, Strength=5);
+	zoom: 1;
+}
+/*#ma-cible .critere .value a:hover {
+	text-shadow: #fff 1px 1px 1px;
+}*/

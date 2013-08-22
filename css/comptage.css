@@ -1,0 +1,703 @@
+@charset "utf-8";
+
+#corps_content {
+	margin-top: 15px;
+}
+
+.content_bg {
+	position: relative;
+	padding-top: 170px;
+}
+
+.ui-tooltip {
+	text-align: left;
+}
+
+
+/******************************************************************/
+
+
+/* ------------- */
+/* Menu CRITERES */
+/* ------------- */
+
+#menu-criteres {
+	background: #545454;
+}
+
+#menu-criteres h1 {
+	background: #545454;
+	color: #05C70A;
+}
+
+/* Libellé catégorie critère */
+#menu-criteres h2 {
+	color: #fff;
+	/*color: #05C70A;*/
+	position: relative;
+	font-size: 14px;
+	background: #05C70A;
+	/*background: #545454;*/
+	/*-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 10px;
+	-moz-border-radius-bottomleft: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 5px;*/
+
+	/*-webkit-border-top-left-radius: 10px;
+-webkit-border-top-right-radius: 10px;
+-moz-border-radius-topleft: 10px;
+-moz-border-radius-topright: 10px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;*/
+}
+#menu-criteres h2 .icon {
+	position: absolute;
+	top: 2px;
+	left: 3px;
+	opacity: 0.8;
+}
+#menu-criteres h2 .title {
+	padding-left: 25px;
+}
+
+/* Liste de critères dans une catégorie */
+#menu-criteres > ul {
+	padding-left: 10px;
+	background: none;
+	/*background: #545454;*/
+	/*background: #05C70A;*/
+	/*background: linear-gradient(to bottom right, #ccc 10%, #fff 90%);*/
+	/*-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;*/
+	/*box-shadow: 8px 8px 12px #aaa;*/
+}
+#menu-criteres a {
+	color: #05C70A;
+	/*color: #fff;*/
+}
+/* Liste imrbriquée (modes de saisie) */
+#menu-criteres ul > li > ul {
+	padding-bottom: 5px;
+	display: none;
+}
+
+#menu-criteres li {
+	font-size: 12px;
+	padding: 0px;
+	position: relative;
+	height: auto;
+}
+/* Libellé critère */
+#menu-criteres > ul > li {
+	background-position: 0 12px;
+	background-repeat: no-repeat;
+}
+/* flèche */
+#menu-criteres > ul > li > .title {
+	padding-left: 12px;
+	background: url("../img/comptage/menu/arrow.png") no-repeat 0 4px transparent;
+}
+
+
+/******************************************************************/
+
+/* ------------------------------------------- */
+/* Light box d'édition des valeurs d'une liste */
+/* ------------------------------------------- */
+
+#formEditValeurs ul {
+	margin: 0 20px;
+}
+#formEditValeurs li {
+	list-style: disc;
+	position: relative;
+	white-space: nowrap;
+}
+#formEditValeurs .delete {
+	/*float: right;*/
+	position: absolute;
+	right: 0px;
+	top: 2px;
+}
+
+
+/******************************************************************/
+
+/* -------- */
+/* Timeline */
+/* -------- */
+
+#timeline {
+	position: absolute;
+	top: -35px;
+	left: 50px;
+	height: 20px;
+	font-size: 18px;
+}
+#timeline li {
+	float: left;
+	margin-right: 20px;
+	list-style: none;
+}
+#timeline li.selected {
+	font-weight: bold;
+}
+#timeline a:hover {
+	color: #969696;
+}
+
+
+/******************************************************************/
+
+/* ----------------- */
+/* Bloc destinataire */
+/* ----------------- */
+
+#destinataire {
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	/*padding: 12px;
+	padding-top: 30px;*/
+	width: 200px;
+	color: #545454;
+	font-size: 14px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	box-shadow: 0 0 5px 0 #aaa;
+}
+#destinataire .header {
+	background: #545454;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding: 5px;
+	text-align: left;
+	color: #05C70A;
+}
+#destinataire .edit {
+	background: url("../img/comptage/user.png") no-repeat 0 0 transparent;
+	padding-left: 26px;
+	display: inline-block;
+	height: 22px;
+	min-width: 22px;
+	vertical-align: middle;
+	color: #545454;
+	font-size: 14px;
+	font-weight: bold;
+}
+#destinataire .edit:hover {
+	background: url("../img/comptage/userOver.png") no-repeat 0 0 transparent;
+}
+#destinataire .societe {
+	/*float: left;*/
+	text-align: right;
+	font-weight: bold;
+}
+#destinataire .nom {
+	/*float: right;*/
+	text-align: right;
+	font-style: italic;
+}
+
+
+/******************************************************************/
+
+/* ------------------- */
+/* Bloc infos campagne */
+/* ------------------- */
+
+/*#ma-campagne {
+	position: absolute;
+	top: 15px;
+	left: 20px;
+	width: 460px;
+	color: #545454;
+	font-size: 14px;
+	text-align: left;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	box-shadow: 0 0 5px 0 #aaa;
+}
+#ma-campagne header {
+	margin-bottom: 7px;
+	border-bottom: 1px dotted #545454;
+	background: #545454;
+	padding: 5px 15px;
+	-webkit-border-top-left-radius: 10px;
+-webkit-border-top-right-radius: 10px;
+-moz-border-radius-topleft: 10px;
+-moz-border-radius-topright: 10px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+}
+#ma-campagne .type-op, #ma-campagne .type-cible, #ma-campagne .type-donnees {
+	padding: 2px 2px 2px 25px;
+	margin-right: 15px;
+}
+#ma-campagne .type-op {
+	background: url("../img/comptage/fichier.png") no-repeat 0 0px transparent;
+}
+#ma-campagne .type-donnees {
+	background: url("../img/comptage/donnees.png") no-repeat 0 0px transparent;
+}
+#ma-campagne .type-cible {
+	background: url("../img/comptage/target.png") no-repeat 0 0px transparent;
+	color: #05BE0A;
+}
+#ma-campagne .infos {
+	text-align: right;
+	font-size: 12px;
+	font-style: italic;
+}
+#ma-campagne .infos em {
+	border-bottom: 1px dotted #545454;
+}
+#resultat-comptage {
+	text-align: center;
+	font-weight: bold;
+	color: #545454;
+	font-size: 14px;
+	text-align: left;
+}
+#resultat-comptage em {
+	color: #05BE0A;
+	font-size: 16px;
+	font-style: normal;
+}*/
+
+
+.badge {
+    background-color: #999999;
+    color: #FFFFFF;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 14px;
+    padding: 2px 9px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    vertical-align: baseline;
+    white-space: nowrap;
+    border-radius: 9px 9px 9px 9px;
+}
+
+#ma-campagne {
+	background: #e8e8e8;
+	position: absolute;
+	top: 15px;
+	left: 20px;
+	width: 470px;
+	color: #545454;
+	font-size: 14px;
+	text-align: left;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	box-shadow: 0 0 5px 0 #aaa;
+}
+#ma-campagne header {
+	margin-bottom: 7px;
+	border-bottom: 1px dotted #545454;
+	background: #545454;
+	padding: 5px 15px;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+#ma-campagne .content {
+	padding: 5px 15px;
+}
+#ma-campagne-caracteristiques {
+	display: inline-block;
+	width: 260px;
+	border-right: 1px dotted #545454;
+	margin-right: 10px;
+}
+#ma-campagne-caracteristiques > div {
+	display: inline-block;
+	margin: 5px 5px 0 0;
+}
+#ma-campagne .type-op, #ma-campagne .type-cible, #ma-campagne .type-donnees {
+	padding: 2px 2px 2px 25px;
+}
+#ma-campagne .type-op {
+	background: url("../img/comptage/fichier.png") no-repeat 0 0px transparent;
+}
+#ma-campagne .type-donnees {
+	background: url("../img/comptage/donnees.png") no-repeat 0 0px transparent;
+}
+#ma-campagne .type-cible {
+	background: url("../img/comptage/target.png") no-repeat 0 0px transparent;
+	color: #05BE0A;
+}
+#ma-campagne-resultats-comptage {
+	display: inline-block;
+	text-align: center;
+	font-weight: bold;
+	color: #545454;
+	font-size: 14px;
+}
+#ma-campagne-resultats-comptage .badge {
+	background: #05BE0A;
+	border-radius: 20px 20px 20px 20px;
+    font-size: 17px;
+    padding: 9px;
+    margin-bottom: 5px;
+}
+#ma-campagne .infos {
+	text-align: right;
+	font-size: 12px;
+	font-style: italic;
+	margin-top: 10px;
+}
+#ma-campagne .infos em {
+	border-bottom: 1px dotted #545454;
+}
+
+/* Edition du libellé de la campagne */
+#ma-campagne-libelle {
+	background: transparent url("../img/sprites.png") no-repeat right center;
+	background-position: right -214px;
+	width: auto;
+	font-family: DendaNewLightRegular;
+	padding: 5px 10px;
+	margin: 0;
+	text-align: left;
+	text-transform: none;
+	font-weight: normal;
+	position: relative;
+	cursor: pointer;
+	color: #fff;
+	font-weight: bold;
+}
+#ma-campagne-libelle:hover {
+	background-position: right -180px;
+}
+#ma-campagne-libelle .edit input {
+	background: none;
+	color: #949494;
+	font-family: DendaNewLightRegular;
+	font-size: 18px;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+#ma-campagne-libelle .edit button {
+	background: #e8e8e8 url("../img/sprites.png") no-repeat top left;
+	background-position: 0px -300px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 28px;
+	height: 28px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	color: transparent;
+	cursor: pointer;
+}
+
+
+/******************************************************************/
+
+/* ---------- */
+/* Bloc cible */
+/* ---------- */
+
+/* En-tête cible */
+#ma-cible {
+	background: #fff;
+	font-size: 14px;
+	padding: 0px 20px 20px 20px;
+	/*text-align: left;*/
+	text-align: center;
+}
+#ma-cible > header {
+	margin-bottom: 15px;
+
+	background: #545454;
+	color: #fff;
+	/*margin: 0;
+	padding: 0;*/
+	padding: 8px 8px 8px 12px;
+	/*background: none;*/
+	/*width: 250px;*/
+	/*width: 186px;*/
+	margin: 20px auto 10px auto;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	text-align: center;
+	position: relative;
+	display: inline-block;
+}
+#ma-cible > header > h1 {
+	background: none;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	width: auto;
+	/*background: none;*/
+	vertical-align: middle;
+}
+#ma-cible > header > .myBouton {
+	/*position: absolute;
+	right: 3px;
+	top: 3px;*/
+	margin-left: 15px;
+}
+#ma-cible .add {
+	margin-left: 15px;
+}
+#ma-cible p {
+	text-align: center;
+}
+
+/* Conteneur de cibles */
+#ma-cible > div {
+	padding: 5px 15px 1px 0;
+	max-height: 400px;
+	overflow: auto;
+	border-top: 1px dotted #ccc;
+	border-bottom: 1px dotted #ccc;
+}
+
+/* Cible */
+#ma-cible article {
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	position: relative;
+	background: #e8e8e8;
+	margin-bottom: 5px;
+	padding: 25px 10px 5px 30px;
+	min-height: 70px;
+}
+#ma-cible article.selected {
+	/*background: #B6FFB2;*/
+	/*background: #B4EEB5;*/
+	background: #545454;
+}
+#ma-cible article .rank {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 25px;
+	color: #545454;
+}
+#ma-cible article.selected .rank {
+	color: #fff;
+}
+#ma-cible article a.edit {
+	color: #545454;
+}
+#ma-cible article a.edit:hover {
+	color: #353535;
+}
+#ma-cible article > .delete {
+	position: absolute;
+	top: 2px;
+	right: 5px;
+}
+
+/* Critère */
+#ma-cible .critere {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	background: #fff;
+	min-width: 90px;
+	min-height: 50px;
+	padding: 5px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+	box-shadow: 0 0 5px 0 #aaa;
+	/*color: #545454;*/
+}
+#ma-cible article.selected .critere {
+	/*background: #e8e8e8;*/
+}
+#ma-cible .critere .title {
+	padding-right: 18px;
+	color: #545454;
+	font-weight: bold;
+	border-bottom: 1px dotted #CCCCCC;
+	text-align: center;
+}
+#ma-cible article.selected .critere .title {
+	color: #fff;
+	background: #05C70A;
+}
+#ma-cible .critere .value {
+	margin-top: 5px;
+	font-size: 12px;
+	text-align: center;
+}
+#ma-cible .critere .value a {
+	margin-top: 5px;
+	color: #000;
+	background: url("../img/comptage/voir.png") no-repeat 0 2px;
+	padding-left: 15px;
+	transition: 0.5s ease;
+}
+#ma-cible .critere .value a:hover {
+	color: #6e6e6e;
+	text-shadow: #fff 1px 1px 1px;
+}
+#ma-cible .critere .value a.edit {
+	background: url("../img/comptage/edit.png") no-repeat 0 2px;
+}
+#ma-cible .critere .delete {
+	position: absolute;
+	right: 3px;
+	top: 3px;
+}
+
+
+/******************************************************************/
+
+/* ------------------ */
+/* Validation */
+/* ------------------ */
+
+/*#btnSuivant {
+	display: none;
+}*/
+/*#etape_valide .loading {
+	font-size: 14px;
+}*/
+
+
+/******************************************************************/
+
+/* ------------------ */
+/* Formulaire contact */
+/* ------------------ */
+
+#formContact div {
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+	margin: 5px 0 0 0;
+}
+#formContact .title {
+	width: 30%;
+}
+#formContact .value {
+	width: 65%;
+}
+
+
+/******************************************************************/
+
+/* ----------------- */
+/* Comptage en cours */
+/* ----------------- */
+
+#comptage-en-cours {
+	text-align: center;
+	font-size: 16px;
+	margin-top: 15px;
+	padding: 10px;
+}
+#comptage-en-cours .progressbar {
+	background-color: #ccc;
+	margin: 15px;
+}
+
+
+/******************************************************************/
+
+.myBouton {
+	background: #07B20C;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+
+
+	padding: 4px 8px 4px 4px;
+	vertical-align: middle;
+	font-size: 14px;
+	text-transform: none;
+	font-family: Voces;
+	text-align: left;
+	min-width: 80px;
+}
+.myBouton:hover {
+	background: #A4A3A3;
+}
+/*.myBouton {
+	margin: 0;
+	background-image: url(../img/bg_button.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	width: 138px;
+	height: 27px;
+	font-weight: bold;
+	color: white;
+	display: inline-block;
+	text-align: center;
+	float: right;
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+
+	padding: 4px 8px 4px 4px;
+	vertical-align: middle;
+	font-size: 14px;
+	text-transform: none;
+	font-family: Voces;
+}
+.myBouton:hover {
+	background-image: url(../img/bg_buttonOver.png);
+}*/
+.myBouton a {
+	color: #fff;
+}
+
+.myAdd {
+	background: url("../img/add.png") no-repeat transparent;
+	display: inline-block;
+	padding-left: 28px;
+	height: 22px;
+	min-width: 22px;
+	/*background-position: 0px -32px;*/
+}
+.myBack {
+	background: url("../img/back.png") no-repeat transparent;
+	display: inline-block;
+	padding-left: 28px;
+	height: 22px;
+	min-width: 22px;
+	/*background-position: 0px -32px;*/
+}
+.myGo {
+	background: url("../img/go.png") no-repeat transparent;
+	display: inline-block;
+	padding-left: 28px;
+	height: 22px;
+	min-width: 22px;
+	/*background-position: 0px -32px;*/
+}

@@ -1,0 +1,26 @@
+.ui-slider a:first-of-type {
+	background: url('../../img/helper/intervalle/min.png') !important;
+	margin-top: 14px !important;
+	width: 21px !important;
+	height: 35px !important;
+	bottom: 31px;
+}
+.ui-slider a:last-of-type {
+	background: url('../../img/helper/intervalle/max.png') !important;
+	margin-top: 14px !important;
+	width: 21px !important;
+	height: 35px !important;
+	bottom: 31px;
+}
+.ui-slider-legend {
+	height: 16px;
+	font-size: 15px;
+	margin-left: 15px;
+	margin-top: -27px;
+	text-align: left;
+}
+.ui-slider-legend label {
+	display: inline-block;
+	position: relative;
+	/*float: left;*/
+}

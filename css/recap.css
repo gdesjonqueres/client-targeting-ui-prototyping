@@ -1,0 +1,120 @@
+/***************************************** MENU RECAP *************************************/
+
+#menu-recap a:hover {
+	font-weight: bold;
+}
+
+#menu-recap {
+	position: fixed;
+	top: 90px;
+	margin-left: 1090px;
+	width: 183px;
+	padding: 19px 0 0 5px;
+}
+
+#menu-recap div.top {
+	background-image: url("../img/comptage/recap/bgRecapTop.png");
+	height: 8px;
+}
+#menu-recap div.middle {
+	background-image: url("../img/comptage/recap/bgRecapMiddle.png");
+	padding: 0 15px;
+	padding-bottom: 10px;
+	font-family: Voces;
+}
+#menu-recap div.bottom {
+	background-image: url("../img/comptage/recap/bgRecapBottom.png");
+	height: 28px;
+}
+#menu-recap div.middle h2 {
+	font-size: 18px;
+	font-weight: normal;
+	padding: 8px;
+	line-height: 20px;
+	font-family: Voces;
+}
+
+#menu-recap section {
+	margin-top: 10px;
+}
+#menu-recap header {
+	font-weight: bold;
+	text-decoration:underline;
+	margin-bottom: 2px;
+}
+
+#menu-recap p {
+	text-align: center;
+}
+#menu-recap em {
+	font-style: italic;
+}
+
+#menu-recap .macampagne p.infos {
+	font-size: 10px;
+	color: grey;
+}
+#menu-recap .macampagne p.infos em {
+	font-weight: bold;
+}
+#menu-recap .macampagne .cible {
+	background: url("../img/comptage/recap/target.png") no-repeat 0 0 transparent;
+	padding-left: 20px;
+	text-transform: uppercase;
+	color: red;
+}
+
+#menu-recap ul {
+	text-align: left;
+	margin: 0 0 0 15px;
+	padding: 0;
+}
+#menu-recap li {
+	position: relative;
+}
+#menu-recap li span.title {
+	font-weight: bold;
+}
+#menu-recap li .count {
+	font-style: italic;
+}
+#menu-recap ul.nested {
+	margin: 0 0 0 5px;
+}
+#menu-recap ul.nested li {
+	list-style: none;
+	font-size: 11px;
+}
+
+#menu-recap p.addcible {
+	margin-top: 10px;
+}
+
+#menu-recap .comptage {
+	padding: 5px 0 0 35px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFF;
+	line-height: 12px;
+	margin: 0;
+	display: none;
+	visibility: hidden;
+}
+
+#menu-recap .comptage input[type=button] {
+	padding: 5px 0 0 35px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFF;
+	line-height: 12px;
+	margin: 0;
+	color: #FFF;
+	/*width:90px;*/
+	background-image: url(../img/comptage/recap/btnCoordonneesOFF.png);
+	background-color: transparent;
+	padding: 5px 40px 5px 15px;
+	background-repeat: no-repeat;
+	/*text-shadow: 2px 2px 5px #000; */
+	border: none;
+	cursor: pointer;
+}
